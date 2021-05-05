@@ -1,0 +1,17 @@
+.main-header {
+	margin-bottom: 100px;
+
+	&__logo {
+		max-width: 45%;
+	}
+}
+
+@include laptop {
+	.main-header {
+		margin-bottom: 150px;
+
+		&__logo {
+			margin-left: 100px;
+		}
+	}
+}

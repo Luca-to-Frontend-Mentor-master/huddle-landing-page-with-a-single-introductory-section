@@ -1,0 +1,49 @@
+.main {
+	margin-bottom: 50px;
+
+	&__banner {
+		max-width: 100%;
+		margin-bottom: 40px;
+	}
+}
+
+@include laptop {
+	.main {
+		display: flex;
+		justify-content: space-between;
+		margin-left: 100px;
+		max-width: 1424px;
+	}
+}
+
+.article {
+	text-align: center;
+	margin-top: 10px;
+
+	&__title {
+		font-size: 1.5rem;
+		font-family: $main-font;
+	}
+
+	&__text {
+		font-weight: lighter;
+		line-height: 22px;
+		margin-bottom: 25px;
+	}
+}
+
+@include laptop {
+	.article {
+		text-align: left;
+		margin-left: 45px;
+
+		&__title {
+			font-size: 2.6rem;
+			font-weight: $font-bold;
+			line-height: 65px;
+		}
+		&__text {
+			font-size: 1.1rem;
+		}
+	}
+}

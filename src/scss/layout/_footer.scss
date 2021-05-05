@@ -1,0 +1,42 @@
+@include laptop {
+	.main-footer {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+	}
+}
+
+.social {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+
+	&__item {
+		border: 1px solid $color-whiter;
+		margin: 0 5px;
+		padding: 5px;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 25px;
+		height: 25px;
+	}
+
+	&__link {
+		color: inherit;
+	}
+}
+
+@include laptop {
+	.social__item {
+		width: 45px;
+		height: 45px;
+	}
+}
+.social__item:hover {
+	border: 1px solid $color-soft-magenta;
+	color: $color-soft-magenta;
+}

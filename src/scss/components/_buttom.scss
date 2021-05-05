@@ -1,0 +1,17 @@
+.buttom {
+	display: inline-block;
+	text-decoration: none;
+	border-radius: 40px;
+	box-shadow: 0 5px 5px $color-btn-shadow;
+}
+
+.btn--article {
+	background-color: $color-whiter;
+	padding: 15px 60px;
+	font-size: 0.7rem;
+}
+
+.btn--hover:hover {
+	background-color: $color-soft-magenta;
+	color: $color-whiter;
+}
